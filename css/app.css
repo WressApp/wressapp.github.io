@@ -1,0 +1,368 @@
+/*
+ * @Author  Duygu KEŞKEK
+ * @Title   Wress Theme
+ * @Version 1.0.5
+ */
+
+body
+{
+    font-size: 16px;
+}
+
+body a
+{
+    text-decoration: none;
+}
+
+header
+{
+    background-color: #009688;
+}
+
+nav
+{
+    padding: 50px 0;
+}
+
+.btn
+{
+    padding: 10px 30px;
+
+    transition: .20s linear;
+
+    border-radius: 5px;
+}
+
+.btn-green
+{
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.46);
+    background: #009688;
+}
+
+.btn-green:hover
+{
+    color: #009688;
+    background: #fff;
+    box-shadow: 0 3px 7px rgba(0,0,0,.23);
+}
+
+.btn-white
+{
+    color: #009688;
+    border: 1px solid rgba(0,150,136,.46);
+    background: #fff;
+}
+
+.btn-white:hover
+{
+    color: #fff;
+    background: #009688;
+    box-shadow: 0 3px 7px rgba(255,255,255,.23);
+}
+
+.embed-container
+{
+    position: relative;
+
+    overflow: hidden;
+
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.embed-container iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.content-title
+{
+    font: 600 40px 'Courgette', cursive;
+
+    text-align: center;
+}
+
+.content-subtitle
+{
+    font: 600 20px 'Exo 2', sans-serif;
+
+    margin-top: -10px;
+
+    text-align: center;
+}
+
+.content-share,
+.info,
+.mail
+{
+    margin: 50px auto;
+}
+
+.thinline
+{
+    max-width: 800px;
+    margin: auto;
+
+    border: 1px solid black;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.info .contact
+{
+    font: 600 25px 'Exo 2', sans-serif;
+
+    position: relative;
+
+    overflow: hidden;
+
+    max-width: 300px;
+    margin: 0 auto;
+
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.info .contact span
+{
+    display: block;
+
+    margin-top: 12px;
+}
+
+.info .contact:before
+{
+    position: absolute;
+    bottom: -45%;
+    left: -1px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+    transition: transform 200ms ease;
+    transform: rotate(-45deg) translateX(-50px);
+
+    border-top: 30px solid transparent;
+    border-right: 30px solid #ea6446;
+    border-bottom: 30px solid transparent;
+}
+
+.info .contact:after
+{
+    position: absolute;
+    top: -45%;
+    right: -2px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+    transition: transform 200ms ease;
+    -webkit-transform: rotate(135deg) translateX(-50px); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+        -ms-transform: rotate(135deg) translateX(-50px); /* IE 9 */
+            transform: rotate(135deg) translateX(-50px); /* IE 10, Fx 16+, Op 12.1+ */
+
+    border-top: 30px solid transparent;
+    border-right: 30px solid #ea6446;
+    border-bottom: 30px solid transparent;
+}
+
+.info .contact:hover:before
+{
+    -webkit-transform: rotate(-45deg) translateX(0);
+        -ms-transform: rotate(135deg) translateX(-50px);
+            transform: rotate(-45deg) translateX(0);
+}
+
+.info .contact:hover:after
+{
+    -webkit-transform: rotate(135deg) translateX(0);
+        -ms-transform: rotate(135deg) translateX(-50px);
+            transform: rotate(135deg) translateX(0);
+}
+
+.mail p
+{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+}
+
+.mail-container
+{
+    position: relative;
+
+    width: 5em;
+    height: 5em;
+    margin: auto;
+}
+
+.mail-container > #paper-container
+{
+    top: 1em;
+
+    transition: all .2s ease;
+}
+
+.mail-container:hover > #paper-container
+{
+    top: 0;
+
+    transition: all .2s ease;
+}
+
+#paper-container
+{
+    position: absolute;
+    top: 1em;
+    left: .1em;
+
+    width: 4.4em;
+    height: 3.5em;
+
+    border: .2em solid #ff8d77;
+    background: #fff;
+}
+
+#paper-container.move-up
+{
+    top: 0;
+
+    transition: all .2s ease;
+}
+
+#paper-container.move-down
+{
+    top: 1em;
+
+    transition: all .2s ease;
+}
+
+.right-envelope-triangle
+{
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    border-top: 57px solid transparent;
+    border-right: 80px solid #52b28b;
+    border-bottom: 0 solid transparent;
+}
+
+.left-envelope-triangle
+{
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    border-top: 57px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 80px solid #5ecc9f;
+}
+
+.envelope-container
+{
+    position: relative;
+    top: 1.5em;
+}
+
+.line
+{
+    position: relative;
+    top: .3em;
+    left: 1.15em;
+
+    width: 2.3em;
+    height: .25em;
+
+    background-color: #415d5b;
+}
+
+#line2
+{
+    top: .9em;
+}
+
+#line3
+{
+    top: 1.45em;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media (min-width : 320px)
+{
+    #logo
+    {
+        height: 30px;
+    }
+    header
+    {
+        height: 380px;
+    }
+    .nav-right
+    {
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media (min-width : 480px)
+{
+    #logo
+    {
+        height: 35px;
+    }
+    header
+    {
+        height: 555px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px)
+{
+    #logo
+    {
+        height: 40px;
+    }
+    .nav-right
+    {
+        display: block;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 992px)
+{
+    header
+    {
+        height: 580px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px)
+{
+    header
+    {
+        height: 600px;
+    }
+}
